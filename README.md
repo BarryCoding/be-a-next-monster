@@ -90,13 +90,30 @@ code .
 bun dev
 ```
 
-## Folder Structure
+## 🏎️ Folder Structure
 
-10:22 - Special Files
+## Special Files
 
-10:27 - Basic Routing
-12:23 - Basic Routing In Action
-16:18 - Basic Routing Challenge
+- page.tsx
+- layout.tsx
+- template.tsx
+- not-found.tsx
+- loading.tsx
+- error.tsx
+
+## Basic Routing In Action
+
+- src/app/about/page.tsx http://localhost:3000/about ✅
+- src/app/login/page.tsx http://localhost:3000/login ✅
+- src/app/login/login.tsx http://localhost:3000/login 🚫
+
+### Basic Routing Challenge
+
+- [x] create a new next.js project
+- [x] 2 basic routes for /about and /contact
+- [x] navigate between this 2 pages 
+  - http://localhost:3000/challenges/001-basic-routing/about
+  - http://localhost:3000/challenges/001-basic-routing/contact
 
 20:23 - Nested Routes
 21:16 - Nested Routes In Action
