@@ -115,10 +115,15 @@ bun dev
   - http://localhost:3000/challenges/001-basic-routing/about
   - http://localhost:3000/challenges/001-basic-routing/contact
 
-20:23 - Nested Routes
-21:16 - Nested Routes In Action
-24:52 - Dashboard Project
-1:22:40 - Nested Routes Challenge
+## Nested Routes In Action
+
+- [src/app/users/page.tsx](http://localhost:3000/users)  ✅
+- [src/app/users/about/page.tsx](http://localhost:3000/users/about) ✅
+- src/app/users/about/project/page.tsx http://localhost:3000/users/about/project ✅
+
+### 🏎️ Dashboard Project
+
+### Nested Routes Challenge
 
 1:26:10 - Linking
 1:27:11 - Linking In Action
