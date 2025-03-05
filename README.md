@@ -125,6 +125,12 @@ bun dev
 
 ### Nested Routes Challenge
 
+- [x] Create a "products" route and inside that same folder create two more folders name "all" & "specific"
+- [x] Inside the "all" folder create a component which will show this text: "(1220) products in the store"
+  - http://localhost:3000/challenges/002-nested-routes/products/all
+- [x] Inside the "specific" folder create a component which will show this text: "Here is my one & only product"
+  - http://localhost:3000/challenges/002-nested-routes/products/specific
+
 1:26:10 - Linking
 1:27:11 - Linking In Action
 1:31:10 - Linking Challenge
