@@ -148,9 +148,24 @@ import Link from 'next/link'
 - [x] In the "dashboard" page, implement a navigation menu that includes links to the "home" page and other sections within the dashboard.
 - [x] Use Next.js's `<Link>` component to create these navigation links. Ensure that clicking on these links navigates the user to the corresponding pages within the application without a full page refresh.
 
-1:35:55 - useRouter
-1:37:42 - useRouter In Action
-1:44:23 - useRouter Challenge
+## useRouter In Action
+
+```tsx
+'use client'
+import { useRouter } from 'next/navigation'
+
+const router = useRouter()
+
+<button onClick={() => router.push('/portfolio')}> Portfolio </button>
+```
+
+### useRouter Challenge
+
+- [x] Create two routes: "page1" and "page2".
+- [x] In the "page1" route, create a simple landing page with a message and a button.
+- [x] In the "page2" route, create a second page with information or content.
+- [x] Implement a programmatic navigation from "page1" to "page2" using the useRouter hook from Next. When the user clicks a button on "page1," they should be navigated to "page2."
+- [x] Verify that programmatic navigation from "page1" to "page2" works as expected, and that the route information is displayed on "page2."
 
 1:48:37 - Private Pages
 1:49:06 - Route Groups
