@@ -396,7 +396,56 @@ export default function Error({
 }
 ```
 
-3:44:20 - Images
+## Images
+
+```tsx
+import Image from 'next/image'
+import profilePic from './me.png'
+ 
+export default function Page() {
+  return (
+    <>
+      {/* local image */}
+      <Image
+        src={profilePic}
+        alt="Picture of the author"
+        // width={500} automatically provided
+        // height={500} automatically provided
+        // blurDataURL="data:..." automatically provided
+        // placeholder="blur" // Optional blur-up while loading
+      />
+
+      {/* remote image with next configuration */}
+      <Image
+        src="https://s3.amazonaws.com/my-bucket/profile.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
+    </>
+  )
+}
+```
+
+```ts
+import { NextConfig } from 'next'
+ 
+const config: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3.amazonaws.com',
+        port: '',
+        pathname: '/my-bucket/**',
+        search: '',
+      },
+    ],
+  },
+}
+ 
+export default config
+```
 
 3:50:12 - Welcome To The Backend
 3:50:54 - GET Method
