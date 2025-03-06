@@ -473,6 +473,42 @@ export default function Page() {
 }
 ```
 
+## Metadata
+
+```tsx
+// page.tsx or layout.tsx
+import type { Metadata } from 'next'
+ 
+// static
+export const metadata: Metadata = {
+  title: '...',
+  description: '...',
+}
+ 
+export default function Page() {}
+```
+
+```tsx
+import type { Metadata } from 'next'
+ 
+type Props = {
+  params: Promise<{ id: string }>
+}
+
+// dynamic
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params
+  const product = await fetch(`https://.../${id}`).then((res) => res.json())
+ 
+  return {
+    title: product.title
+  }
+}
+ 
+export default function Page({ params }: Props) {}
+```
+
+
 3:50:12 - Welcome To The Backend
 3:50:54 - GET Method
 3:56:22 - POST Method
@@ -481,8 +517,6 @@ export default function Page() {
 4:13:15 - DELETE Method
 4:17:44 - URL Query Parameters
 4:23:40 - Middlewares
-
-4:27:34 - Metadata
 
 4:34:38 - CSS Modules
 4:38:19 - UI Verse
