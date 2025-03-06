@@ -335,8 +335,22 @@ export default function NotFound() {
 - http://localhost:3000/challenges/009-not-found
 - http://localhost:3000/challenges/009-not-found/no
 
-3:32:26 - Redirects
-3:35:12 - Redirects 
+## Redirects
+
+```tsx
+import { redirect, notFound } from 'next/navigation'
+
+redirect(`/post/${id}`) // Navigate to the new post page
+
+notFound() // Navigate to not found page
+```
+
+### Redirects Challenge 010
+
+- [x] Create a redirection rule that redirects users from the route "/old-page" to the new page "/new-page."
+  - http://localhost:3000/challenges/010-redirect/old-page
+- [x] Create a rule that redirects users from a non-existing route "/non-existing" to the custom 404 error page "not-found.tsx."
+  - http://localhost:3000/challenges/010-redirect/non-existing
 
 3:39:09 - Loading
 3:39:44 - Loading In Action
