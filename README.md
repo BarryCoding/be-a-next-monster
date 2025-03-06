@@ -508,6 +508,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function Page({ params }: Props) {}
 ```
 
+## Styling
+
+- CSS Module
+  - name.module.css
+- TailwindCSS https://tailwindcss.com/
+- 🥇 ShadCN UI https://ui.shadcn.com/
+- Magic UI https://magicui.design/
+- Aceternity UI https://ui.aceternity.com/
+- 🚫 UI Verse https://uiverse.io/
+- 🚫 UI Lukacho https://ui.lukacho.com/
+- 🚫 NextUI / HeroUI https://www.heroui.com/
 
 3:50:12 - Welcome To The Backend
 3:50:54 - GET Method
@@ -518,13 +529,3 @@ export default function Page({ params }: Props) {}
 4:17:44 - URL Query Parameters
 4:23:40 - Middlewares
 
-4:34:38 - CSS Modules
-4:38:19 - UI Verse
-4:44:45 - TailwindCSS
-4:49:15 - UI Lukacho
-4:56:59 - Shadcn UI
-5:06:28 - Magic UI
-5:11:17 - HeroUI / NextUI
-5:19:01 - Aceternity UI
-
-5:25:56 - Outro
