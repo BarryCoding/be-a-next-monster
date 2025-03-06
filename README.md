@@ -131,9 +131,22 @@ bun dev
 - [x] Inside the "specific" folder create a component which will show this text: "Here is my one & only product"
   - http://localhost:3000/challenges/002-nested-routes/products/specific
 
-1:26:10 - Linking
-1:27:11 - Linking In Action
-1:31:10 - Linking Challenge
+## Linking In Action
+
+```tsx
+import Link from 'next/link'
+
+<Link href='/'>Home<Link>
+<Link href='/portfolio'>Portfolio<Link>
+```
+
+### Linking Challenge
+
+- [x] Create two routes "home" and "dashboard"
+- [x] In the "home" page, create a simple landing page with a welcoming message and some content.
+- [x] In the "dashboard" page, create a dashboard with various components, such as a navigation menu, user profile, and other related information.
+- [x] In the "dashboard" page, implement a navigation menu that includes links to the "home" page and other sections within the dashboard.
+- [x] Use Next.js's `<Link>` component to create these navigation links. Ensure that clicking on these links navigates the user to the corresponding pages within the application without a full page refresh.
 
 1:35:55 - useRouter
 1:37:42 - useRouter In Action
