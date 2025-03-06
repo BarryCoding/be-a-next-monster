@@ -190,9 +190,28 @@ const router = useRouter()
 - [x] Inside the "auth" folder create a login route which will only print (Please Login To See The Content)
   - http://localhost:3000/challenges/005-route-groups/login
 
-1:57:32 - Dynamic Routes
-1:59:35 - Dynamic Routes In Action
-2:09:38 - Movies Project
+## Dynamic Routes In Action
+
+- `src/app/games/[id]/page.tsx`
+
+```tsx
+interface Props {
+  params: Promise<{ id: string }>
+}
+export default async function Page({ params }: Props) {
+  const { id } = await params
+  return <div>Game: {id}</div>
+}
+```
+
+## Movies Project 02
+
+- http://localhost:3000/projects/02-movies
+
+```zsh
+bun add react-icons
+```
+
 2:28:23 - Dynamic Routes Challenge
 
 2:30:34 - Catch All Route Segments
