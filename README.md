@@ -220,10 +220,30 @@ bun add react-icons
 - http://localhost:3000/challenges/006-dynamic-routes/users/1
 - http://localhost:3000/challenges/006-dynamic-routes/users/2
 
-2:30:34 - Catch All Route Segments
-2:32:19 - Catch All Route Segments In Action
-2:36:26 - Gaming Website Project
-2:49:30 - Catch All Route Segments 
+## Catch All Route Segments In Action
+
+- from: src/app/games/series/page.tsx
+- from: src/app/games/series/gta/page.tsx
+- from: src/app/games/series/gta/gta-5/page.tsx
+- from: src/app/games/series/gta/gta-5/reviews/page.tsx
+- from: src/app/games/series/gta/gta-5/reviews/comment-123/page.tsx
+- to: `src/app/games/[...all]/page.tsx`
+
+```tsx
+interface Props {
+  params: Promise<{ all: string[] }>
+}
+export default async function Page({ params }: Props) {
+  const { all } = await params
+  return <div>Game: {all.join(" ")}</div>
+}
+```
+
+### Gaming Website Project 03
+
+- http://localhost:3000/projects/03-games
+
+2:49:30 - Catch All Route Segments Challenge
 
 2:52:47 - Layouts
 2:54:41 - Layouts In Action
