@@ -447,6 +447,32 @@ const config: NextConfig = {
 export default config
 ```
 
+## Fonts
+https://fonts.google.com/
+
+```tsx
+import localFont from 'next/font/local'
+import { Roboto } from 'next/font/google'
+ 
+const myFont = localFont({
+  src: './my-font.woff2',
+})
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+})
+ 
+export default function Page() {
+  return (
+    <div>
+      <p className={myFont.className}>Local Font</p>
+      <p className={roboto.className}>Google Font</p>
+    </div>
+  )
+}
+```
+
 3:50:12 - Welcome To The Backend
 3:50:54 - GET Method
 3:56:22 - POST Method
@@ -455,8 +481,6 @@ export default config
 4:13:15 - DELETE Method
 4:17:44 - URL Query Parameters
 4:23:40 - Middlewares
-
-4:24:38 - Fonts
 
 4:27:34 - Metadata
 
