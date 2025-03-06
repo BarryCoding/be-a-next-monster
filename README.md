@@ -167,9 +167,15 @@ const router = useRouter()
 - [x] Implement a programmatic navigation from "page1" to "page2" using the useRouter hook from Next. When the user clicks a button on "page1," they should be navigated to "page2."
 - [x] Verify that programmatic navigation from "page1" to "page2" works as expected, and that the route information is displayed on "page2."
 
-1:48:37 - Private Pages
-1:49:06 - Route Groups
-1:49:56 - Route Groups In Action
+## Private Pages
+
+- public: src/app/users/page.tsx 
+  - http://localhost:3000/users ✅
+- private: src/app/_users/page.tsx
+  - http://localhost:3000/users  🚫
+  - http://localhost:3000/_users 🚫
+
+## Route Groups In Action
 1:54:37 - Route Groups Challenge
 
 1:57:32 - Dynamic Routes
