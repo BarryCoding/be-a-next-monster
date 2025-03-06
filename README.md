@@ -308,6 +308,33 @@ export default function Template({ children }: { children: React.ReactNode }) {
 </Layout>
 ```
 
+## Not Found In Action
+
+- http://localhost:3000/challenges/009-not-found
+- http://localhost:3000/challenges/009-not-found/no
+
+```tsx
+import Link from 'next/link'
+ 
+export default function NotFound() {
+  return (
+    <div>
+      <h2>Not Found</h2>
+      <p>Could not find requested resource</p>
+      <Link href="/">Return Home</Link>
+    </div>
+  )
+}
+```
+
+### Not Found Challenge 009
+
+- [x] In your Next.js project, create a custom error page named "not-found.tsx" in the "app" directory. This page will serve as the custom "Not Found" page for your application.
+- [x] Customize the "not-found.tsx" page with a message or content to inform users that the page they are looking for does not exist.
+- [x] Verify that when accessing a non-existing route, users are redirected to the custom "Not Found" page (not-found.tsx) and see the message you provided.
+- http://localhost:3000/challenges/009-not-found
+- http://localhost:3000/challenges/009-not-found/no
+
 3:32:26 - Redirects
 3:35:12 - Redirects 
 
