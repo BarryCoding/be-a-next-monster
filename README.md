@@ -243,7 +243,14 @@ export default async function Page({ params }: Props) {
 
 - http://localhost:3000/projects/03-games
 
-2:49:30 - Catch All Route Segments Challenge
+### Catch All Route Segments Challenge 007
+
+- [x] Inside the `app` directory, create a new folder named `products`.
+- [x] Inside the `products` folder, create a folder named `[...slug]`.
+- [x] Inside the `[...slug]` folder, create a `page.tsx` file that will render information based on the dynamic segments from the URL.
+- [x] Inside `page.tsx`, display the entire `slug` array, showing each segment of the URL dynamically.
+- http://localhost:3000/challenges/007-catch-all-route/products/1/2/3
+- http://localhost:3000/challenges/007-catch-all-route/products/hello/world
 
 2:52:47 - Layouts
 2:54:41 - Layouts In Action
