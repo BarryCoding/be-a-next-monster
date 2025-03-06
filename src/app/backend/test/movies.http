@@ -1,0 +1,63 @@
+@baseUrl = http://localhost:3000/backend
+
+# find all movies
+GET {{baseUrl}}/movies HTTP/1.1
+
+###
+
+# find movies by query
+GET {{baseUrl}}/movies?query=the HTTP/1.1
+
+###
+
+# find movies by query
+GET {{baseUrl}}/movies?query=dark HTTP/1.1
+
+###
+
+# create a new movie
+POST {{baseUrl}}/movies HTTP/1.1
+content-type: application/json
+
+{
+  "id": 10,
+  "name": "be a next monster",
+  "ratings": 10,
+  "genre": "Programming"
+}
+
+###
+
+# find a movie by id 3
+GET {{baseUrl}}/movies/3 HTTP/1.1
+
+###
+
+# find a movie by id 3000
+GET {{baseUrl}}/movies/3000 HTTP/1.1
+
+###
+
+# update a movie by id 3
+PATCH {{baseUrl}}/movies/3 HTTP/1.1
+content-type: application/json
+
+{
+  "ratings": 33,
+  "genre": "Horror"
+}
+
+###
+
+# check the movie is updated
+GET {{baseUrl}}/movies/3 HTTP/1.1
+
+###
+
+# delete a movie by id 3
+DELETE {{baseUrl}}/movies/3 HTTP/1.1
+
+###
+
+# check the movie is delete
+GET {{baseUrl}}/movies/3 HTTP/1.1

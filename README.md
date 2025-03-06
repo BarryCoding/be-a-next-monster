@@ -520,12 +520,13 @@ export default function Page({ params }: Props) {}
 - 🚫 UI Lukacho https://ui.lukacho.com/
 - 🚫 NextUI / HeroUI https://www.heroui.com/
 
-3:50:12 - Welcome To The Backend
-3:50:54 - GET Method
-3:56:22 - POST Method
-4:00:37 - Backend Dynamic Routes
-4:06:08 - PATCH Method
-4:13:15 - DELETE Method
-4:17:44 - URL Query Parameters
-4:23:40 - Middlewares
+## The Backend
+
+- Static Routes
+  - GET Method with Query Parameters
+  - POST Method
+- Dynamic Routes
+  - PATCH Method
+  - DELETE Method
+- Middlewares
 
