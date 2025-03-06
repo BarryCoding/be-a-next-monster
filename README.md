@@ -204,7 +204,7 @@ export default async function Page({ params }: Props) {
 }
 ```
 
-## Movies Project 02
+### Movies Project 02
 
 - http://localhost:3000/projects/02-movies
 
@@ -212,7 +212,13 @@ export default async function Page({ params }: Props) {
 bun add react-icons
 ```
 
-2:28:23 - Dynamic Routes Challenge
+### Dynamic Routes Challenge 006
+
+- [x] If you visit /users/1, the page should display "User Profile: 1".
+- [x] If you visit /users/2, the page should display "User Profile: 2".
+- [x] The page should dynamically change based on the ID in the URL.
+- http://localhost:3000/challenges/006-dynamic-routes/users/1
+- http://localhost:3000/challenges/006-dynamic-routes/users/2
 
 2:30:34 - Catch All Route Segments
 2:32:19 - Catch All Route Segments In Action
