@@ -107,7 +107,7 @@ bun dev
 - src/app/login/page.tsx http://localhost:3000/login ✅
 - src/app/login/login.tsx http://localhost:3000/login 🚫
 
-### Basic Routing Challenge
+### Basic Routing Challenge 001
 
 - [x] create a new next.js project
 - [x] 2 basic routes for /about and /contact
@@ -121,9 +121,9 @@ bun dev
 - [src/app/users/about/page.tsx](http://localhost:3000/users/about) ✅
 - src/app/users/about/project/page.tsx http://localhost:3000/users/about/project ✅
 
-### 🏎️ Dashboard Project
+### 🏎️ Dashboard Project 01
 
-### Nested Routes Challenge
+### Nested Routes Challenge 002
 
 - [x] Create a "products" route and inside that same folder create two more folders name "all" & "specific"
 - [x] Inside the "all" folder create a component which will show this text: "(1220) products in the store"
@@ -140,7 +140,7 @@ import Link from 'next/link'
 <Link href='/portfolio'>Portfolio<Link>
 ```
 
-### Linking Challenge
+### Linking Challenge 003
 
 - [x] Create two routes "home" and "dashboard"
 - [x] In the "home" page, create a simple landing page with a welcoming message and some content.
@@ -159,13 +159,14 @@ const router = useRouter()
 <button onClick={() => router.push('/portfolio')}> Portfolio </button>
 ```
 
-### useRouter Challenge
+### useRouter Challenge 004
 
 - [x] Create two routes: "page1" and "page2".
 - [x] In the "page1" route, create a simple landing page with a message and a button.
 - [x] In the "page2" route, create a second page with information or content.
 - [x] Implement a programmatic navigation from "page1" to "page2" using the useRouter hook from Next. When the user clicks a button on "page1," they should be navigated to "page2."
 - [x] Verify that programmatic navigation from "page1" to "page2" works as expected, and that the route information is displayed on "page2."
+- http://localhost:3000/challenges/004-use-router/page1
 
 ## Private Pages
 
@@ -176,7 +177,18 @@ const router = useRouter()
   - http://localhost:3000/_users 🚫
 
 ## Route Groups In Action
-1:54:37 - Route Groups Challenge
+
+- src/app/(auth)/login/page.tsx
+- src/app/(auth)/register/page.tsx
+
+### Route Groups Challenge 005
+
+- [x] Create the "users" folder (but it shouldn't be a route).
+- [x] Inside the "users" folder create a "userinfo" route.
+  - http://localhost:3000/challenges/005-route-groups/userinfo
+- [x] Inside the "app" directory create another folder name "auth" but it (shouldn't be a route).
+- [x] Inside the "auth" folder create a login route which will only print (Please Login To See The Content)
+  - http://localhost:3000/challenges/005-route-groups/login
 
 1:57:32 - Dynamic Routes
 1:59:35 - Dynamic Routes In Action
