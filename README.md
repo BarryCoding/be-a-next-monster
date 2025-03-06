@@ -352,8 +352,14 @@ notFound() // Navigate to not found page
 - [x] Create a rule that redirects users from a non-existing route "/non-existing" to the custom 404 error page "not-found.tsx."
   - http://localhost:3000/challenges/010-redirect/non-existing
 
-3:39:09 - Loading
-3:39:44 - Loading In Action
+## Loading
+
+```tsx
+export default function Loading() {
+  // You can add any UI inside Loading, including a Skeleton.
+  return <LoadingSkeleton />
+}
+```
 
 3:41:57 - Errors
 3:42:26 - Errors in Action
