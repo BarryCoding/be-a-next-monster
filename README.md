@@ -291,6 +291,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     - A main content area that dynamically loads the blog post.
     - A sidebar showing recent posts.
 
+## 🏎️ Templates in Action
+
+- layouts persist across routes and maintain state
+- templates are given a unique key, meaning children Client Components reset their state on navigation.
+
+```tsx
+export default function Template({ children }: { children: React.ReactNode }) {
+  return <div>{children}</div>
+}
+
+// output
+<Layout>
+  {/* Note that the template is automatically given a unique key. */}
+  <Template key={routeParam}>{children}</Template>
+</Layout>
+```
+
 3:32:26 - Redirects
 3:35:12 - Redirects 
 
